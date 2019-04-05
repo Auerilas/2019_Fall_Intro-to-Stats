@@ -1,2 +1,3 @@
-# 2019_Fall_Intro-to-Stats
-Intro to stats for Fall 2019
+# 2019 Fall - Introduction to Statistics
+
+This repository contains the lab and quiz notebooks for Introduction to Statistics.
