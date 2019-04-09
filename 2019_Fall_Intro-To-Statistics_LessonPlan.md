@@ -94,6 +94,7 @@ Additional topics to consider:
 		iii. conda-forge
 		iv. update all packages
 		v. install PyStan
+			A. special instructions for Windows
 	b) IDE
 		i. Show mine (sublime + terminal)
 		ii. Spyder
@@ -126,23 +127,49 @@ Additional topics to consider:
 
 ### Lecture Day
 
-1. What is statistics?
-	a) "statistics provides standards of empirical proof" - Ramsey and Schaffer
-	b) "how best to collect, analyze, and draw conclusions from data" - Diez et al
-	c) statistics provide a way to discriminate between variation that is "background" and variation that is "scientifically interesting" - Crawley
-	d) "how much variation do we expect by chance" - Crawley
-		i. 'significance'
-		ii. why 'significance' is stupid
-		iii. focus on estimation / effect size / uncertainty
+1. What are statistics?
+	a) Definitions from books
+		i. "statistics provides standards of empirical proof" - Ramsey and Schaffer
+		ii. "how best to collect, analyze, and draw conclusions from data" - Diez et al
+		iii. a way to discriminate between variation that is "background" and variation that is "scientifically interesting" - Crawley
+		iv. "how much variation do we expect by chance?" - Crawley
+		v. "data collection, organization, analysis, interpretation, and presentation" - Wikipedia
+	b) My own definition
+		i. "The science of uncertainty"
+			A. extrapolating from samples to populations
+			B. Define POPULATION
+			C. Define SAMPLE
+			D. Give examples (READ ANDREW GELMAN'S BOOK HERE)
+				a) Maybe jellybeans? Delicious?
+				b) A lesson about bias?
+				c) A lesson about extrapolating to unobserved populations
+					i. Multiple kinds of jellybeans?
+					ii. Or maybe something of different sizes: use a closed scoop to sample. Use only a scoop with big holes to show bias?
+				d) How to design experiments and studies to eliminate bias (ensure proper sample to population extrapolation) is the subject of experimental design (different topic)/
+				e) Will assume that the experiment has been designed appropriately throughout this course.
+		ii. Two goals of statistics:
+			A. increase our understanding of the world (hypothesis testing/scientific method)
+			B. prediction and forecasting (machine learning/data science)
+			C. We will focus on hypothesis testing
+
+2. Basic statistical quantities
+	a) How can we characterize the "population" from the "sample"?
+	b) Central tendancy: Mean
+	c) Spread of individuals: Standard deviation
+	d) These quantities are uncertain
+		i. An example - Jellybeans again? Have students estimate the mean from different samples
+	e) Standard error
+	
 
 ### Lab Day
 1. Introduction to PYSTAN
 	a) the blocks
 	b) a basic model estimating the mean
-		i. can use this as a one-sample t-test
+		i. A one-sample t-test
 		ii. can use this as a basic introduction to statistical inference
 			A. point estimates
 			B. uncertainty
+				A. Tie this into lecture
 			C. confidence intervals
 			D. adjust sample size and effect size to prove a point about significance
 				1. uncertainty goes down as N goes up.
